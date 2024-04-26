@@ -21,20 +21,16 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 25rem;
-  height: 40rem;
-  margin: 8rem 5.5rem 11rem 5.5rem;
-  margin-left: 55rem;
-  justify-content: space-around;
-  padding: 5rem 5rem 20rem 5rem;
+  width: 26.5rem;
+  height: 43rem;
+  margin: 3.5rem 23rem 3.5rem 23rem;
+  padding: 1rem;
   border-radius: 10px;
-
 
   & .FotoPerfil img {
       border-radius: 100%;
       width: 8rem;
-      margin: -5rem 0rem -2.5rem 3rem;
-      padding: 1rem 1rem 1rem 1rem;
+      margin: 2rem 7.5rem 2rem 7.5rem;
 
   }
   & h1 {
@@ -42,26 +38,26 @@ body{
     font-size: 1.5rem;
     color: hsl(0, 0%, 100%);
     font-weight: 400;
-    margin-left: 1rem;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 0rem 1rem 0rem 1rem;
 
   }
   & h2 {
     font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
+    font-size: 8px;
     color: hsl(75, 94%, 57%);
-    font-weight: 600;
-    margin-left: 1.1rem;
-    margin-top: -4.5rem;
+    font-weight: 700;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0rem 5.6rem 0rem 5.6rem;
 
   }
   & h3 {
     font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: hsl(0, 0%, 100%);
     font-weight: 400;
-    margin-left: -1.5rem;
-    margin-top: -3.5rem;
-
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
   }
   }
 
