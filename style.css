@@ -26,16 +26,45 @@ body{
   margin: 8rem 5.5rem 11rem 5.5rem;
   margin-left: 55rem;
   justify-content: space-around;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 20rem 5rem;
   border-radius: 10px;
 
 
   & .FotoPerfil img {
       border-radius: 100%;
-      width: 6rem;
+      width: 8rem;
+      margin: -5rem 0rem -2.5rem 3rem;
+      padding: 1rem 1rem 1rem 1rem;
 
   }
+  & h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-left: 1rem;
 
-}
+  }
+  & h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-left: 1.1rem;
+    margin-top: -4.5rem;
+
+  }
+  & h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-left: -1.5rem;
+    margin-top: -3.5rem;
+
+  }
+  }
+
+
 /* Regras de mídia para tornar o layout responsivo */
 
