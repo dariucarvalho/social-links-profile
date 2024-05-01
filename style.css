@@ -8,59 +8,111 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: hsl(0, 0%, 8%);
-
 }
 
-.RetanguloCentral{
+.RetanguloCentral {
   background-color: hsl(0, 0%, 12%);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   width: 26.5rem;
-  height: 43rem;
-  margin: 3.5rem 23rem 3.5rem 23rem;
+  max-width: 90%;
+  margin: 3.5rem auto;
   padding: 1rem;
   border-radius: 10px;
+}
 
-  & .FotoPerfil img {
-      border-radius: 100%;
-      width: 8rem;
-      margin: 2rem 7.5rem 2rem 7.5rem;
+.RetanguloCentral .FotoPerfil {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.RetanguloCentral .FotoPerfil img {
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem; /* Define uma altura para manter a proporção */
+  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+.RetanguloCentral h1,
+.RetanguloCentral h2,
+.RetanguloCentral h3 {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin: 1rem;
+  padding: 0 3.5rem;
+  text-align: center;
+}
+
+.RetanguloCentral h1 {
+  font-size: 2rem;
+}
+
+.RetanguloCentral h2 {
+  font-size: 1.1rem;
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+}
+
+.RetanguloCentral h3 {
+  font-size: 1rem;
+}
+
+.RetanguloCentral .Botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 1rem;
+}
+
+.RetanguloCentral .Botoes button {
+  margin: 8px 0;
+  width: 100%;
+  max-width: 22rem;
+  height: 3rem;
+  background-color: hsl(0, 0%, 20%);
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 9px;
+  transition: background-color 0.3s;
+}
+
+.RetanguloCentral .Botoes button:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
+/* Regras de mídia */
+@media only screen and (max-width: 768px) {
+  .RetanguloCentral {
+    width: 90%;
+    max-width: 100%;
+    margin: 3.5rem auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .RetanguloCentral {
+    padding: 0.5rem;
+    width: 25rem;
 
   }
-  & h1 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
-    margin: 0rem 5rem 0rem 5rem;
-    padding: 0rem 1rem 0rem 1rem;
-
+  .RetanguloCentral h1,
+  .RetanguloCentral h2,
+  .RetanguloCentral h3 {
+    padding: 0 1rem;
   }
-  & h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 8px;
-    color: hsl(75, 94%, 57%);
-    font-weight: 700;
-    margin: 0.5rem 1rem 0.5rem 1rem;
-    padding: 0rem 5.6rem 0rem 5.6rem;
+}
 
+/* Adicionando layout para 1040p */
+@media only screen and (min-width: 1040px) {
+  .RetanguloCentral {
+    width: 30rem;
+    margin: 3.5rem auto;
   }
-  & h3 {
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-  }
-  }
-
-
-/* Regras de mídia para tornar o layout responsivo */
-
+}
